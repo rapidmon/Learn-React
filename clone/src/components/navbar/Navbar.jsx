@@ -1,7 +1,7 @@
 import {Link, withRouter} from 'react-router-dom'
 import styled from 'styled-components'
 import logo from '../../logo.svg';
-import search_icon from './foundicon.png';
+import search_icon from '../../foundicon.png';
 
 const Bar = styled.ul`
     width: 100%;
@@ -13,7 +13,7 @@ const Bar = styled.ul`
     position: fixed;
 `
 
-const Main_menu = styled.ul`
+const Mainmenu = styled.ul`
     display: flex;
     align-items: center;
     justify-content: center;
@@ -31,7 +31,7 @@ const List = styled.li`
     font-size: ${(props) => (props.className === 'sub_menu' ? '13px' : '18px')};
     font-weight: ${(props) => (props.className === 'home' ? '900' : '400')};
     color: ${(props)=> (props.className === 'home' ? '#61DAFB' : props.current ? '#61DAFB' : '#F8F5F8')};
-    padding: ${(props)=> (props.className != 'main_menu' ? '0' : props.current ? '23px 15px 20px 15px' : '20px 15px')};
+    padding: ${(props)=> (props.className !== 'main_menu' ? '0' : props.current ? '23px 15px 20px 15px' : '20px 15px')};
     margin: ${(props)=> (props.className === 'home' ? '0 100px 0 100px' : props.className === 'search' ? '0 0 0 80px' : props.id === 'last' ? '0 100px 0 0' : '0')};
     border-bottom: ${(props)=> (props.current ? '3px #61DAFB solid' : '0')};
     & a{
@@ -65,12 +65,12 @@ const Navbar = ({location}) => {
         <> 
             <Bar>
                 <List className='home'><Logo src={logo} alt='logo'/><Link to="/">React</Link></List>
-                <Main_menu>
+                <Mainmenu>
                     <List current={location.pathname === '/docs'} className='main_menu'><Link to="/docs">Docs</Link></List>
                     <List current={location.pathname === '/tutorial'} className='main_menu'><Link to="/tutorial">Tutorial</Link></List>
                     <List current={location.pathname === '/blog'} className='main_menu'><Link to="/blog">Blog</Link></List>
                     <List current={location.pathname === '/community'} className='main_menu'><Link to="/community">Community</Link></List>
-                </Main_menu>
+                </Mainmenu>
                 <List className='search'><Search placeholder='Search'/></List>
                 <List className='sub_menu'><Link to="/versions">v18.1.0</Link></List>
                 <List className='sub_menu'><Link to="/languages">Languages</Link></List>
