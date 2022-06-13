@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 const Section = styled.section`
-    padding: 140px 85px;
+    padding: 140px 85px 0 85px;
     width: 55%;
 `
 
@@ -21,7 +21,7 @@ const Subtitle= styled.h2`
 
 const Summary = styled.p`
     line-height: 30px;
-    padding-bottom: 40px;
+    ${(props) => (props.isEmpty && "padding-bottom: 40px")};
     border-bottom: 1px solid #cacaca;
 `
 
@@ -30,7 +30,7 @@ function MainmenuHeader({title, subtitle, summary}){
         <Section>
             <Title>{title}</Title>
             <Subtitle>{subtitle}</Subtitle>
-            <Summary>{summary}</Summary>
+            <Summary isEmpty={summary ? true : false}>{summary}</Summary>
         </Section>
     )
 }

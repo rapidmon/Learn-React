@@ -9,6 +9,7 @@ const Side = styled.ul`
     width: 28%;
     top: 0;
     margin-top: 64px;
+    height: 100%;
     padding: 20px 0 40px 40px;
 `
 

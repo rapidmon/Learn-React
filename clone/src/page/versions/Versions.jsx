@@ -1,7 +1,9 @@
+import Footer from "../../components/footer/footer"
+
 function Versions(){
     return(
       <>
-        home
+        <Footer />
       </>
     )
 }

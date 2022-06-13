@@ -21,7 +21,7 @@ const Content = styled.p`
     line-height: 25px;
 `
 
-function Main_1(){
+function MainOne(){
     return(
         <>
             <Section>
@@ -45,4 +45,4 @@ function Main_1(){
     )
 }
 
-export default Main_1;
+export default MainOne;
