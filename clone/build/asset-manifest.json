@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Learn-React/static/css/main.31d6cfe0.css",
+    "main.js": "/Learn-React/static/js/main.0eb35812.js",
+    "static/media/foundicon.png": "/Learn-React/static/media/foundicon.87157d48462fb62dd5f1.png",
+    "static/media/code.png": "/Learn-React/static/media/code.356300d804f529455838.png",
+    "static/media/logo_black.svg": "/Learn-React/static/media/logo_black.a66845d9659bc2be137706637c16b7f9.svg",
+    "static/media/logo.svg": "/Learn-React/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/Learn-React/index.html",
+    "main.0eb35812.js.map": "/Learn-React/static/js/main.0eb35812.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.0eb35812.js"
+  ]
+}
