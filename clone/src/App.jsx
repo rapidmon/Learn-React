@@ -18,7 +18,7 @@ const Globalstyle = createGlobalStyle`
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename='/Learn-React'>
         <Globalstyle />
         <Navbar />
         <Switch>
