@@ -1,21 +1,18 @@
-import MainmenuHeader from "../../components/header/mainmenu_header"
-import Sidebar from "../../components/navbar/Sidebar"
-import Footer from "../../components/footer/footer"
-import HeadFooter from "../../components/footer/headfooter"
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import AddReact from './Addreact';
+import GettingStarted from './Gettingstarted';
 
-function Docs(){
-    return(
-      <>
-        <MainmenuHeader
-         title={'Getting Started'}
-         subtitle={'This page is an overview of the React documentation and related resources.'}
-         summary={'React is a JavaScript library for building user interfaces. Learn what React is all about on our homepage or in the tutorial.'}
-        />
-        <HeadFooter />
-        <Sidebar />
-        <Footer />
-      </>
-    )
+function Docs() {
+  return (
+    <>
+      <BrowserRouter>
+        <Switch>
+          <Route path="/docs/getting_started" exact component={GettingStarted}/>
+          <Route path="/docs/Add_react_to_a_website" component={AddReact}/>
+        </Switch>
+      </BrowserRouter>
+    </>
+  );
 }
 
-export default Docs
+export default Docs;

@@ -1,5 +1,5 @@
 import MainmenuHeader from "../../components/header/mainmenu_header"
-import Sidebar from "../../components/navbar/Sidebar"
+import SubSidebar from "../../components/navbar/Subsidebar"
 import Footer from "../../components/footer/footer"
 import HeadFooter from "../../components/footer/headfooter"
 
@@ -12,7 +12,14 @@ function Tutorial(){
          summary={''}
         />
         <HeadFooter />
-        <Sidebar />
+        <SubSidebar
+         title={'TUTORIAL'}
+         subtitle1={'Before We Start the Tutorial'}
+         subtitle2={'Setup for the Tutorial'}
+         subtitle3={'Overview'}
+         subtitle4={'Completing the Game'}
+         subtitle5={'Adding Time Travel'}
+         />
         <Footer />
       </>
     )

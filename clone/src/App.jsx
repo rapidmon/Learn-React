@@ -18,19 +18,19 @@ const Globalstyle = createGlobalStyle`
 function App() {
   return (
     <>
-    <BrowserRouter>
-      <Globalstyle />
-      <Navbar />
-      <Switch>
-        <Route path="/" exact component={Home}/>
-        <Route path="/docs" component={Docs}/>
-        <Route path="/tutorial" component={Tutorial}/>
-        <Route path="/blog" component={Blog}/>
-        <Route path="/community" component={Community}/>
-        <Route path="/versions" component={Versions}/>
-        <Route path="/languages" render={() => <Languages />}/>
-      </Switch>
-    </BrowserRouter>
+      <BrowserRouter>
+        <Globalstyle />
+        <Navbar />
+        <Switch>
+          <Route path="/" exact component={Home}/>
+          <Route path="/docs" component={Docs}/>
+          <Route path="/tutorial" component={Tutorial}/>
+          <Route path="/blog" component={Blog}/>
+          <Route path="/community" component={Community}/>
+          <Route path="/versions" component={Versions}/>
+          <Route path="/languages" render={() => <Languages />}/>
+        </Switch>
+      </BrowserRouter>
     </>
   );
 }

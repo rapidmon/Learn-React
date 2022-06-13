@@ -2,6 +2,7 @@ import {Link, withRouter} from 'react-router-dom'
 import styled from 'styled-components'
 import logo from '../../logo.svg';
 import search_icon from '../../foundicon.png';
+import link_icon from '../../Link.png';
 
 const Bar = styled.ul`
     width: 100%;
@@ -46,6 +47,7 @@ const List = styled.li`
 const Search = styled.input`
     background-color: #20232A;
     border: none;
+    width: 200px;
     font-size: 20px;
     border-radius: 5px;
     padding: 5px 0 5px 35px;
@@ -60,13 +62,20 @@ const Search = styled.input`
     }
 `
 
+const LinkIcon = styled.img`
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+    filter: opacity(0.5) drop-shadow(0 0 0 white);
+`
+
 const Navbar = ({location}) => {
     return(
         <> 
             <Bar>
                 <List className='home'><Logo src={logo} alt='logo'/><Link to="/">React</Link></List>
                 <Mainmenu>
-                    <List current={location.pathname === '/docs'} className='main_menu'><Link to="/docs">Docs</Link></List>
+                    <List current={location.pathname === '/docs/getting_started'} className='main_menu'><Link to="/docs/getting_started">Docs</Link></List>
                     <List current={location.pathname === '/tutorial'} className='main_menu'><Link to="/tutorial">Tutorial</Link></List>
                     <List current={location.pathname === '/blog'} className='main_menu'><Link to="/blog">Blog</Link></List>
                     <List current={location.pathname === '/community'} className='main_menu'><Link to="/community">Community</Link></List>
@@ -74,7 +83,7 @@ const Navbar = ({location}) => {
                 <List className='search'><Search placeholder='Search'/></List>
                 <List className='sub_menu'><Link to="/versions">v18.1.0</Link></List>
                 <List className='sub_menu'><Link to="/languages">Languages</Link></List>
-                <List className='sub_menu' id='last'><a href="https://github.com/rapidmon">Github</a></List>
+                <List className='sub_menu' id='last'><a href="https://github.com/rapidmon">Github</a><LinkIcon src={link_icon} alt="link" /></List>
             </Bar>
         </>
     )

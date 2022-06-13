@@ -12,6 +12,7 @@ const Section = styled.section`
 
 const Text = styled.div`
     width: 330px;
+    margin-right: 30px;
 `
 
 const Title = styled.h2`
