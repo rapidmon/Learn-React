@@ -35,7 +35,7 @@ const Btn_to_Docs = styled.button`
 function Linklist(){
     return(
         <To_Learn>
-            <List><Link to='/docs'><Btn_to_Docs>Get Started</Btn_to_Docs></Link></List>
+            <List><Link to='/docs/getting_started'><Btn_to_Docs>Get Started</Btn_to_Docs></Link></List>
             <List><Link to='/tutorial'>Take the Tutorial &gt;</Link></List>
         </To_Learn>
     )
